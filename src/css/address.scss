@@ -1,0 +1,32 @@
+.address{
+  padding: 85px 0;
+  background: #FAFAFA;
+  &__content{
+
+  }
+  &__desc{
+    @include text(400, 12px, 14px);
+  }
+  &__row{
+    display: flex;
+    column-gap: 35px;
+    justify-content: space-between;
+  }
+  &__card{
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title{
+    padding-bottom: 33px;
+    @include text(700, 18px, 22px)
+  }
+  &__links{
+    column-gap: 17px;
+    display: flex;
+    padding-top: 21px;
+  }
+  &__last{
+    padding-top: 85px;
+    @include text(400, 12px, 14px);
+  }
+}

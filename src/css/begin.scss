@@ -1,0 +1,82 @@
+.begin {
+  padding: 270px 0 187px;
+  background: url("../images/begin/beginBg.png") center/cover no-repeat fixed;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+  }
+  &__info {
+    position: relative;
+    text-align: center;
+  }
+  &__title {
+    @include text(700, 72px, 86px);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &__text {
+    @include text(600, 24px, 140%);
+    color: #FFFFFF;
+    margin: 40px 0;
+  }
+  &__btn {
+    background: #FFFFFF;
+    border-radius: 6px;
+    height: 50px;
+    padding: 0 53px;
+    border: 2px solid white;
+    @include text(600, 14px, 17px);
+    color: #ED4C5C;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      transition: .3s;
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .begin__title {
+    font-size: 61px;
+  }
+  .begin__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 426px) {
+  .begin__title {
+    font-size: 44px;
+  }
+  .begin__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 376px) {
+  .begin__title {
+    font-size: 40px;
+  }
+  .begin__text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 321px) {
+  .begin__title {
+    font-size: 35px;
+  }
+  .begin__text {
+    font-size: 12px;
+  }
+}

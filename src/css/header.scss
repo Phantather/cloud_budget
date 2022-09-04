@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 4;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    @include text(700, 18px, 22px);
+    color: white;
+  }
+  &__list {
+    display: flex;
+    column-gap: 20px;
+  }
+  &__link {
+    @include text(700, 14px, 17px);
+    color: white;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    select {
+      cursor: pointer;
+    }
+    option {
+      color: #FFFFFF;
+    }
+  }
+
+  &__btn {
+    background: transparent;
+    border: 1px solid white;
+    height: 40px;
+    padding: 0 29px;
+    border-radius: 6px;
+    cursor: pointer;
+    @include text(400, 14px, 17px);
+    transition: .3s;
+    color: white;
+    &:hover {
+      background: white;
+      color: #ED4C5C;
+      transition: .3s;
+    }
+  }
+}
+
+@media (max-width: 841px) {
+  .header__nav {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
+
+@media (max-width: 426px) {
+  .header__link{
+    font-size: 11px;
+  }
+}

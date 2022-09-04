@@ -1,0 +1,48 @@
+.technology{
+  padding: 63px 0 104px;
+  &__title{
+    @include text(600, 36px, 43px);
+    margin-bottom: 52px;
+    text-align: center;
+  }
+  &__row{
+    display: flex;
+    column-gap: 50px;
+  }
+  &__card{
+    width: calc(25% - 37.5px);
+    text-align: center;
+    &-title{
+      @include text(700, 18px, 22px);
+      margin-top: 30px;
+    }
+  }
+  &__numb{
+    @include text(700, 100px, 120px);
+    color: rgba(16, 16, 16, 0.08);
+    position: relative;
+    &-icon{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 35%);
+    }
+  }
+}
+
+
+@media  (max-width: 641px) {
+  .technology__row {
+    flex-wrap: wrap;
+  }
+  .technology__card {
+    width: calc(50% - 25px);
+  }
+}
+
+@media  (max-width: 321px) {
+
+  .technology__card {
+    width: 100%;
+  }
+}

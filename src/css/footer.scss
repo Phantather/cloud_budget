@@ -1,0 +1,61 @@
+.footer {
+  padding-top: 85px;
+  background: #FAFAFA;
+  &__nav {
+    display: flex;
+    column-gap: 80px;
+  }
+  &__info {
+    width: 25%;
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    @include text(700, 18px, 22px);
+    margin-bottom: 33px;
+  }
+  &__address {
+    @include text(400, 12px, 150%);
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+  &__link {
+    @include text(400, 14px, 160%);
+    color: black;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    row-gap:  10px;
+    margin-bottom: 12px;
+    &-link{
+      color: black;
+      @include text(400, 14px, 17px);
+    }
+
+  }
+  &__author {
+    margin-top: 60px;
+    padding: 15px 0;
+    background-color: #ED4C5C;
+    text-align: center;
+    @include text(400, 12px, 25px);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 641px) {
+  .footer__nav {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  .footer__info {
+    width: calc(50% - 40px);
+  }
+}
