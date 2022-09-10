@@ -1,3 +1,11 @@
+$(document).ready(function () {
+    $('.burger').on('click',function () {
+        $('.header__list').toggleClass('header__list_active')
+        $('.burger').toggleClass('close')
+    })
+});
+
+
 $('#demoDefaultSelection').ddslick({
 
     onSelected: function(selectedData){
