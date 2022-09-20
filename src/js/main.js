@@ -1,10 +1,14 @@
-$(document).ready(function () {
-    $('.burger').on('click',function () {
-        $('.header__list').toggleClass('header__list_active')
-        $('.burger').toggleClass('close')
-    })
+$(".mobile-btn").on("click", function () {
+    $(".mobile-btn").toggleClass("show-mobile-btn");
+    $(".header__list").toggleClass("show-header__menu");
+    $(".header__link").toggleClass("show-header__link");
 });
 
+$(".header__list").on("click", function () {
+    $(".mobile-btn").removeClass("show-mobile-btn");
+    $(".header__list").removeClass("show-header__menu");
+    $(".header__link").removeClass("show-header__link");
+});
 
 $('#demoDefaultSelection').ddslick({
 
